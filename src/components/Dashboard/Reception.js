@@ -1,7 +1,12 @@
 import React from "react"
+import Receptionist from "../Pages/Receptionist"
 
 const Reception = () => {
-  return <div>Reception</div>
+  return (
+    <React.Fragment>
+      <Receptionist />
+    </React.Fragment>
+  )
 }
 
 export default Reception
