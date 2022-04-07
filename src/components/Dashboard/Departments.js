@@ -1,7 +1,12 @@
 import React from "react"
+import Deparment from "./../Pages/Departments"
 
 const Departments = () => {
-  return <div>Departments</div>
+  return (
+    <div>
+      <Deparment />
+    </div>
+  )
 }
 
 export default Departments
