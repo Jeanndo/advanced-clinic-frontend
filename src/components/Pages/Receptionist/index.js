@@ -3,7 +3,7 @@ import { Row, Col, Divider, Input, Badge, Avatar } from "antd"
 import { UserOutlined, BellOutlined } from "@ant-design/icons"
 import AddPatient from "./AddPatient"
 import Patients from "./PatientsWithDoctors"
-import PatientsList from "./PatientsList"
+import TabMenu from "./Tabs"
 import classes from "./style.module.css"
 
 const { Search } = Input
@@ -68,7 +68,7 @@ const Receptionist = () => {
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
         <Col className="gutter-row" span={24}>
           <div>
-            <PatientsList />
+            <TabMenu />
           </div>
         </Col>
       </Row>

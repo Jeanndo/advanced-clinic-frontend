@@ -1,6 +1,9 @@
 import React from "react"
 import { Tabs } from "antd"
 import Patients from "./PatientsTable"
+import Doctors from "./DoctorsTable"
+import LaboratoryTable from "./LaboratoryTable"
+import SugeryTable from "./SugeryTable"
 import classes from "./style.module.css"
 
 const { TabPane } = Tabs
@@ -17,13 +20,13 @@ const PatientsList = () => {
           <Patients />
         </TabPane>
         <TabPane tab="DOCTORS" key="2">
-          DOCTORS
+          <Doctors />
         </TabPane>
         <TabPane tab="LABORATORIES" key="3">
-          LABORATORIES
+          <LaboratoryTable />
         </TabPane>
         <TabPane tab="SURVEY" key="4">
-          SURVEY
+          <SugeryTable />
         </TabPane>
       </Tabs>
     </React.Fragment>
