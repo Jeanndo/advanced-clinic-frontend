@@ -18,3 +18,13 @@ font-size: 18px;
 text-align: center;
 color: #13C11A;
 }
+
+.deleteErrorMessage{
+  color:red;
+  font-size: 20px;
+}
+.deleteBtn{
+ width: 100px;
+ text-align: center;
+ border:3px;
+}

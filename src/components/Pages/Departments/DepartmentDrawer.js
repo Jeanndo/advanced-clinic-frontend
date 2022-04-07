@@ -1,10 +1,8 @@
 import React, { useState } from "react"
-import { Drawer } from "antd"
-import AddUser from "./AddUer"
-import classes from "./users.module.css"
-import { EditOutlined } from "@ant-design/icons"
+import { Drawer, Button } from "antd"
+import AddDepartment from "./AddDepartment"
 
-const AddUserDrawer = () => {
+const AddDepartmentDrawer = () => {
   const [visible, setVisible] = useState(false)
 
   const showDrawer = () => {
@@ -18,10 +16,9 @@ const AddUserDrawer = () => {
   return (
     <div>
       <>
-        <button onClick={showDrawer} className={classes.editButton}>
-          <EditOutlined />
-          Edit
-        </button>
+        <Button type="primary" onClick={showDrawer}>
+          Add Department
+        </Button>
         <Drawer
           title="ADD USER"
           placement="right"
@@ -29,11 +26,11 @@ const AddUserDrawer = () => {
           visible={visible}
           width={1200}
         >
-          <AddUser />
+          <AddDepartment />
         </Drawer>
       </>
     </div>
   )
 }
 
-export default AddUserDrawer
+export default AddDepartmentDrawer

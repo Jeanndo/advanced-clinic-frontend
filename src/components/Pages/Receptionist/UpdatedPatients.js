@@ -1,9 +1,9 @@
-// @ts-nocheck
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import PatientForm from "./PatientForm"
+import classes from "./style.module.css"
 
-const AddPatient = () => {
+const UpdatedPatients = () => {
   const [visible, setVisible] = useState(false)
   const showDrawer = () => {
     setVisible(true)
@@ -11,17 +11,16 @@ const AddPatient = () => {
   const onClose = () => {
     setVisible(false)
   }
-
   return (
     <React.Fragment>
       <>
         <Space>
-          <Button type="primary" onClick={showDrawer}>
-            Add Patient
-          </Button>
+          <button onClick={showDrawer} className={classes.editButton}>
+            Edit
+          </button>
         </Space>
         <Drawer
-          width={500}
+          width={800}
           title="ADD PATIENT"
           placement="right"
           onClose={onClose}
@@ -42,4 +41,4 @@ const AddPatient = () => {
   )
 }
 
-export default AddPatient
+export default UpdatedPatients

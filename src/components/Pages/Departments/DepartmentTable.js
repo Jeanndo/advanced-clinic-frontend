@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from "react"
 import { Table, Tag, Space } from "antd"
 import Actions from "./Actions"
@@ -102,7 +101,7 @@ const rowSelection = {
   }),
 }
 
-const UsersTable = () => {
+const DepartmentTable = () => {
   return (
     <div>
       <div>
@@ -119,4 +118,4 @@ const UsersTable = () => {
   )
 }
 
-export default UsersTable
+export default DepartmentTable
