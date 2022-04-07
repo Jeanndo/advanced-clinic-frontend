@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom"
 import { Icon } from "@iconify/react"
 
 const { Sider } = Layout
+const { SubMenu } = Menu
 
 const DashboardSideNavBar = () => {
   const [collapsed, setCollapsed] = useState(false)
@@ -132,14 +133,33 @@ const DashboardSideNavBar = () => {
           <Link to="/Insurance"></Link>
         </Menu.Item>
 
-        <Menu.Item
+        <SubMenu
           key="/users"
           icon={<Icon icon="icomoon-free:users" color="#1890ff" />}
+          title="Users"
+        >
+          <Link to="/users"></Link>
+          <Menu.Item key="/adduser">
+            <span>
+              <strong>Add User</strong>
+            </span>
+            <Link to="/adduser"></Link>
+          </Menu.Item>
+          <Menu.Item key="/users">
+            <span>
+              <strong>User Lists</strong>
+            </span>
+            <Link to="/users"></Link>
+          </Menu.Item>
+        </SubMenu>
+        <Menu.Item
+          key="/roles"
+          icon={<Icon icon="arcticons:permissionmanagerx" color="#1890ff" />}
         >
           <span>
-            <strong>Users</strong>
+            <strong>Roles</strong>
           </span>
-          <Link to="/users"></Link>
+          <Link to="/roles"></Link>
         </Menu.Item>
       </Menu>
     </Sider>

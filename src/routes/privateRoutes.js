@@ -14,6 +14,8 @@ import Appointments from "./../components/Dashboard/Appointments"
 import Bills from "./../components/Dashboard/Bills"
 import Insurances from "./../components/Dashboard/Insurances"
 import Receptionist from "./../components/Dashboard/Reception"
+import Roles from "./../components/Dashboard/Roles"
+import AddUser from "./../components/Pages/users/AddUer"
 
 const PrivateRoutes = () => {
   return (
@@ -45,6 +47,8 @@ const PrivateRoutes = () => {
           <DashboardRoute exact path="/bill" component={Bills} />
           <DashboardRoute exact path="/insurance" component={Insurances} />
           <DashboardRoute exact path="/reception" component={Receptionist} />
+          <DashboardRoute exact path="/roles" component={Roles} />
+          <DashboardRoute exact path="/adduser" component={AddUser} />
         </Switch>
       </Suspense>
     </Fragment>

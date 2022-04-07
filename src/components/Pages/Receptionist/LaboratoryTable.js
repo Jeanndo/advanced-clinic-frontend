@@ -7,7 +7,7 @@ const columns = [
     title: "Date",
     dataIndex: "name",
     key: "name",
-    render: (text) => text,
+    render: (text) => <a href=".">{text}</a>,
   },
   {
     title: "Reference_code",
@@ -85,7 +85,7 @@ const data = [
   },
 ]
 
-const PatientsTable = () => {
+const LaboratoryTable = () => {
   return (
     <React.Fragment>
       <Table columns={columns} dataSource={data} />
@@ -93,4 +93,4 @@ const PatientsTable = () => {
   )
 }
 
-export default PatientsTable
+export default LaboratoryTable

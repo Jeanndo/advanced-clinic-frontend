@@ -7,7 +7,7 @@ const columns = [
     title: "Date",
     dataIndex: "name",
     key: "name",
-    render: (text) => text,
+    render: (text) => <a href=".">{text}</a>,
   },
   {
     title: "Reference_code",
@@ -15,26 +15,26 @@ const columns = [
     key: "age",
   },
   {
-    title: "Patient_ID",
+    title: "Doctor_ID",
     dataIndex: "address",
     key: "address",
   },
   {
-    title: "Patient_Name",
+    title: "Doctor_Name",
     dataIndex: "address",
     key: "address",
   },
 
   {
-    title: "Patient_status",
+    title: "Doctor_status",
     key: "tags",
     dataIndex: "tags",
     render: (tags) => (
       <>
         {tags.map((tag) => {
-          let color = tag.length >= 10 ? "green" : "volcano"
-          if (tag === "outpatient") {
-            color = "green"
+          let color = tag.length >= 10 ? "volcano" : "green"
+          if (tag === "Not on Shift") {
+            color = "volcano"
           }
           return (
             <Tag color={color} key={tag}>
@@ -46,16 +46,16 @@ const columns = [
     ),
   },
   {
-    title: "Total Payment",
+    title: "Total Patients",
     dataIndex: "address",
     key: "address",
   },
   {
-    title: "Action",
+    title: "Schecule",
     key: "action",
     render: (text, record) => (
       <Space size="middle">
-        <button className={classes.editButton}>Edit</button>
+        <button className={classes.scheduleButton}>Sechedule</button>
       </Space>
     ),
   },
@@ -67,25 +67,25 @@ const data = [
     name: "John Brown",
     age: 32,
     address: "New York No. 1 Lake Park",
-    tags: ["inpatient"],
+    tags: ["Not on Shift"],
   },
   {
     key: "2",
     name: "Jim Green",
     age: 42,
     address: "London No. 1 Lake Park",
-    tags: ["inpatient"],
+    tags: ["Not on Shift"],
   },
   {
     key: "3",
     name: "Joe Black",
     age: 32,
     address: "Sidney No. 1 Lake Park",
-    tags: ["outpatient"],
+    tags: ["On Shift"],
   },
 ]
 
-const PatientsTable = () => {
+const DoctorsTable = () => {
   return (
     <React.Fragment>
       <Table columns={columns} dataSource={data} />
@@ -93,4 +93,4 @@ const PatientsTable = () => {
   )
 }
 
-export default PatientsTable
+export default DoctorsTable

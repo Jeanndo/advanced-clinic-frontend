@@ -1,9 +1,10 @@
 import React from "react"
-import UsersList from "./../Pages/users"
+import UserList from "./UsersList"
+
 const Users = () => {
   return (
     <React.Fragment>
-      <UsersList />
+      <UserList />
     </React.Fragment>
   )
 }
