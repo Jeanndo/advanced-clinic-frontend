@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React from "react"
 import { Table, Tag, Space } from "antd"
-import UpdateUserModal from "./UpdateUser"
+import Actions from "./Actions"
 
 const columns = [
   {
@@ -47,7 +47,7 @@ const columns = [
     key: "action",
     render: (text, record) => (
       <Space size="middle">
-        <UpdateUserModal />
+        <Actions />
       </Space>
     ),
   },
