@@ -1,6 +1,6 @@
 import React from "react"
 import { Table, Tag, Space } from "antd"
-import classes from "./style.module.css"
+import UpdatePatient from "./UpdatedPatients"
 
 const columns = [
   {
@@ -55,7 +55,7 @@ const columns = [
     key: "action",
     render: (text, record) => (
       <Space size="middle">
-        <button className={classes.editButton}>Edit</button>
+        <UpdatePatient />
       </Space>
     ),
   },
