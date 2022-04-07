@@ -1,7 +1,8 @@
 // @ts-nocheck
 import React from "react"
 import { Table, Tag, Space } from "antd"
-import classes from "./users.module.css"
+import UpdateUserModal from "./UpdateUser"
+
 const columns = [
   {
     title: "Full Name",
@@ -46,7 +47,7 @@ const columns = [
     key: "action",
     render: (text, record) => (
       <Space size="middle">
-        <button className={classes.editButton}>Edit</button>
+        <UpdateUserModal />
       </Space>
     ),
   },
