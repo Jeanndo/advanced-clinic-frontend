@@ -1,7 +1,11 @@
 import React from "react"
-
-const Suppliers = () => {
-  return <div>Suppliers</div>
+import Suppliers from "./../Pages/Suppliers"
+const Supplier = () => {
+  return (
+    <React.Fragment>
+      <Suppliers />
+    </React.Fragment>
+  )
 }
 
-export default Suppliers
+export default Supplier
