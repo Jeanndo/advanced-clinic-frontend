@@ -1,0 +1,14 @@
+.updateBtn{
+  width: 100px;
+ text-align: center;
+ border:3px;
+}
+.deleteBtn{
+ width: 100px;
+ text-align: center;
+ border:3px;
+}
+.deleteErrorMessage{
+  color:red;
+  font-size: 20px;
+}
