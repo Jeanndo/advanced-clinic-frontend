@@ -1,7 +1,12 @@
 import React from "react"
+import Doctors from "./../Pages/Doctors/"
 
-const Doctors = () => {
-  return <div>Doctors</div>
+const Doctor = () => {
+  return (
+    <React.Fragment>
+      <Doctors />
+    </React.Fragment>
+  )
 }
 
-export default Doctors
+export default Doctor
