@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Drawer } from "antd"
+import { Drawer, Button } from "antd"
 import AddUser from "./AddUer"
 import classes from "./users.module.css"
 import { EditOutlined } from "@ant-design/icons"
@@ -18,10 +18,14 @@ const AddUserDrawer = () => {
   return (
     <div>
       <>
-        <button onClick={showDrawer} className={classes.editButton}>
+        <Button
+          type="primary"
+          onClick={showDrawer}
+          className={classes.editButton}
+        >
           <EditOutlined />
           Edit
-        </button>
+        </Button>
         <Drawer
           title="ADD USER"
           placement="right"

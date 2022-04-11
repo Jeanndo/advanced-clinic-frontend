@@ -25,7 +25,7 @@ const PatientsList = () => {
         <TabPane tab="LABORATORIES" key="3">
           <LaboratoryTable />
         </TabPane>
-        <TabPane tab="SURVEY" key="4">
+        <TabPane tab="SURGERY" key="4">
           <SugeryTable />
         </TabPane>
       </Tabs>
