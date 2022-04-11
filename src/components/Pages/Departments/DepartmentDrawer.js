@@ -20,11 +20,11 @@ const AddDepartmentDrawer = () => {
           Add Department
         </Button>
         <Drawer
-          title="ADD USER"
+          title="ADD DEPARTMENT"
           placement="right"
           onClose={onClose}
           visible={visible}
-          width={1200}
+          width={700}
         >
           <AddDepartment />
         </Drawer>

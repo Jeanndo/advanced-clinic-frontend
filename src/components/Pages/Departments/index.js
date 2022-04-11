@@ -1,9 +1,7 @@
 import React from "react"
-import { Row, Col, Divider, Typography, Input } from "antd"
+import { Row, Col, Divider, Input } from "antd"
 import AddDepartment from "./DepartmentDrawer"
 import DepartmentList from "./DepartmentTable"
-
-const style = { background: "#0092ff", padding: "8px 0" }
 
 const { Search } = Input
 
