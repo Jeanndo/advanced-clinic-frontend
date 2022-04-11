@@ -1,7 +1,12 @@
 import React from "react"
+import Medecines from "../Pages/Medecines"
 
 const Medecine = () => {
-  return <div>Medecine</div>
+  return (
+    <React.Fragment>
+      <Medecines />
+    </React.Fragment>
+  )
 }
 
 export default Medecine
