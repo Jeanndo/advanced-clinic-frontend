@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { Modal, Button } from "antd"
-import classes from "./Medecine.module.css"
+import classes from "./lab.module.css"
 import { DeleteOutlined } from "@ant-design/icons"
 
-const DeleteMedecine = () => {
+const DeleteLab = () => {
   const [isModalVisible, setIsModalVisible] = useState(false)
 
   const showModal = () => {
@@ -42,4 +42,4 @@ const DeleteMedecine = () => {
   )
 }
 
-export default DeleteMedecine
+export default DeleteLab

@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
-import MedecineForm from "./MedecineForm"
-import classes from "./Medecine.module.css"
+import LabForm from "./LabForm"
+import classes from "./lab.module.css"
 import { EditOutlined } from "@ant-design/icons"
 
-const UpdatedMedecine = () => {
+const UpdatedLab = () => {
   const [visible, setVisible] = useState(false)
   const showDrawer = () => {
     setVisible(true)
@@ -27,7 +27,7 @@ const UpdatedMedecine = () => {
         </Space>
         <Drawer
           width={800}
-          title="Update Medecine"
+          title="Update Lab"
           placement="right"
           onClose={onClose}
           visible={visible}
@@ -37,11 +37,11 @@ const UpdatedMedecine = () => {
             </Space>
           }
         >
-          <MedecineForm />
+          <LabForm />
         </Drawer>
       </>
     </React.Fragment>
   )
 }
 
-export default UpdatedMedecine
+export default UpdatedLab
