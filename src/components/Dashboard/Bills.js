@@ -1,7 +1,11 @@
 import React from "react"
-
-const Bills = () => {
-  return <div>Bills</div>
+import Bills from "./../Pages/Bills"
+const Bill = () => {
+  return (
+    <React.Fragment>
+      <Bills />
+    </React.Fragment>
+  )
 }
 
-export default Bills
+export default Bill
