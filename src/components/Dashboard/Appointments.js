@@ -1,7 +1,12 @@
 import React from "react"
+import Appointments from "./../Pages/Appointments"
 
-const Appointments = () => {
-  return <div>Appointments</div>
+const Appointment = () => {
+  return (
+    <React.Fragment>
+      <Appointments />
+    </React.Fragment>
+  )
 }
 
-export default Appointments
+export default Appointment
