@@ -14,10 +14,10 @@ const PatientForm = () => {
       <Form
         name="basic"
         labelCol={{
-          span: 8,
+          span: 24,
         }}
         wrapperCol={{
-          span: 16,
+          span: 24,
         }}
         initialValues={{
           remember: true,

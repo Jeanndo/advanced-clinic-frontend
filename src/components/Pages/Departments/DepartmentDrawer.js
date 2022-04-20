@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Drawer, Button } from "antd"
 import AddDepartment from "./AddDepartment"
+import classes from "./department.module.css"
 
 const AddDepartmentDrawer = () => {
   const [visible, setVisible] = useState(false)
@@ -16,7 +17,12 @@ const AddDepartmentDrawer = () => {
   return (
     <div>
       <>
-        <Button type="primary" onClick={showDrawer}>
+        <Button
+          type="primary"
+          onClick={showDrawer}
+          className={classes.addBtn}
+          size="large"
+        >
           Add Department
         </Button>
         <Drawer

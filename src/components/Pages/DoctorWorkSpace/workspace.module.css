@@ -1,0 +1,445 @@
+.nottofications {
+  float: right;
+}
+.over__view_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(196, 196, 196, 0.15);
+}
+.overview {
+  width: 15%;
+  background-color: rgba(196, 196, 196, 0.2);
+ position:relative;
+}
+.patient__data {
+  width: 50%;
+  padding: 5px;
+}
+
+.bmi__calculator {
+  width: 35%;
+  background: rgba(29, 78, 216, 0.75);
+  border: 1px solid #f1f1f1;
+  border-radius: 40px 0px 0px 40px;
+  padding: 50px 10px;
+}
+.over__view_label {
+  margin-top: 20px;
+  width: 80%;
+  background: rgba(29, 78, 216, 0.6);
+}
+.over__view_label h5 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+.overview__action{
+  margin: 50px 0;
+}
+.overview__action button {
+  border-style: none;
+  width: 150px;
+  background: none;
+  cursor: pointer;
+  font-family: Mulish;
+  font-size: 14px;
+  display: block;
+  text-align: left;
+}
+
+.overview__action button:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.overview__action button:hover {
+  background-color: #1890ff;
+  color: #fff;
+  width: 80%;
+}
+.overview__info {
+  background: #1d4ed84d;
+  padding: 20px;
+  position:absolute;
+  top: 425px;
+}
+.patient__name {
+  display: inline;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 10px;
+  color: #1d4ed8;
+}
+.diagnosticBtn {
+  background: #1d4ed8;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 12px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.examBtn {
+  background: #16a34a;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 12px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.prescribeBtn {
+  background: #e79b38;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 12px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.exmaBtn {
+  background: #e95d5c;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 12px;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+}
+.card {
+  width: 90%;
+  height: 150px;
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.cardiologistCard {
+  width: 90%;
+  height: 120px;
+  background: #ffffff;
+  border: 1px solid #e8e7e7;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.disease {
+  display: flex;
+  flex-wrap: wrap;
+}
+.BloodIcon_container {
+  width: 30px;
+  height: 30px;
+  background: #d0fbff;
+  border-radius: 10px;
+  padding: 2px;
+  margin-right: 5px;
+}
+.BloodIcon_container img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.temperatureIcon__container {
+  width: 30px;
+  height: 30px;
+  background: #f8debd;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.temperatureIcon__container img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.heartIcon__container {
+  width: 30px;
+  height: 30px;
+  background: #fbf0f3;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+.heartIcon__container img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.leading__label label {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  color: #000000;
+}
+
+.blood__pressure__label {
+  display: block;
+  width: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+  background: #d0fbff;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center;
+}
+
+.temperature__label {
+  display: block;
+  width: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+  background: #f8debd;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center;
+}
+.heart__rate__label {
+  display: block;
+  width: 50px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+  background: #fbf0f3;
+  border-radius: 4px;
+  padding: 3px;
+  text-align: center;
+}
+.cardiologyDate label {
+  display: block;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  text-align: center;
+  color: #000000;
+  margin: 30px 0 0 0;
+}
+
+/* BMI CALCULATOR */
+
+.bmi__calculator__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.bmi__calculator__date__picker input {
+  border-style: none;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.bmi__calculator__displays__container {
+  display: flex;
+  margin-top: 10px;
+}
+.bmiwith__height__container {
+  margin-right: 10px;
+}
+.bmi__calculator__height__reader {
+  width: 140px;
+  height: 50px;
+  background: #f8debd;
+  border-radius: 5px;
+  align-items: center;
+  padding:0 0 0 70px;
+}
+.bmi__calculator__height__reader div {
+  margin-right: 5px;
+  display: inline-block;
+ 
+}
+.height__first__two__grey__leader_lines {
+  margin-top: -10px;
+  width: 1.78px;
+  height: 10px;
+  background: rgba(40, 40, 40, 0.28);
+}
+.height_third_readerline {
+  width: 1.78px;
+  height: 10px;
+  background: rgba(40, 40, 40, 0.7);
+}
+.height__fourth__reader__line {
+  width: 1.78px;
+  height: 22px;
+  background: #d16564;
+ 
+}
+.height__next__three__reader__line {
+width: 1.78px;
+height: 10px;
+background: #282828;
+}
+.height__eigth__reader__line{
+width: 1.78px;
+height: 10px;
+background: rgba(40, 40, 40, 0.6);
+}
+.height__ninth__reader__line{
+width: 1.78px;
+height: 10px;
+background: rgba(40, 40, 40, 0.3);
+}
+
+.bmi__calculator__weight__reader {
+  margin-top: 10px;
+  width: 140px;
+  height: 50px;
+  background: #d0fbff;
+  border-radius: 5px;
+  align-items: center;
+  padding:0 0 0 70px;
+}
+.bmi__calculator__weight__reader div{
+  margin-right: 5px;
+  display: inline-block;
+}
+.bmi__calculator__results__container {
+  width: 100%;
+  height: 110px;
+  background: #4a4949;
+  border-radius: 5px;
+  padding: 10px;
+}
+.bmi__title{
+display:block;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 100;
+font-size: 13px;
+color: #FFFFFF;
+text-align: center;
+}
+.bmi__calculator__results{
+  display: flex;
+  padding:10px;
+}
+.bmi__calculator__results__figures{
+ width: 40%;
+ color: #fff;
+ text-align:center;
+}
+.bmi__calculator__results__text{
+width: 60%;
+background: #D6FFDD;
+border-radius: 8px;
+text-align:center;
+font-family: 'Mulish';
+font-style: normal;
+font-weight: 100;
+font-size: 10px;
+padding: 2px;
+}
+.body__measurement__container h5 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.body__parts__measurments {
+  display: flex;
+  flex-wrap: wrap;
+  padding:10px;
+}
+.body__parts {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.body__parts_card {
+  padding: 15px 5px;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.body__parts__image {
+  width: 70%;
+}
+.body__parts__image img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+.completeDiagnosticBtn{
+width: 200px;
+height: 70px;
+border-radius: 100px;
+}
+
+
+.SendExamBtn{
+  width: 200px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+.prescribeMedicationBtn{
+width: 200px;
+height: 70px;
+border-radius: 100px;
+}
+
+.resultImage__container img{
+  width: 100%;
+object-fit:contain;
+}
+
+.resultTitle{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 36px;
+align-items: center;
+color: #000000;
+}
+.resultContainer{
+  padding:50px;
+  background: #F3F4F6;
+}
+
+.printBtn{
+  background: #1d4ed8;
+  border-radius: 2px;
+  border-style: none;
+  font-size: 12px;
+  width:100px;
+  padding:5px;
+  cursor: pointer;
+  color: #fff;
+  margin-top:10px;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import BillForm from "./BillForm"
+import classes from "./bill.module.css"
 
 const BillDrawer = () => {
   const [visible, setVisible] = useState(false)
@@ -14,7 +15,12 @@ const BillDrawer = () => {
   return (
     <React.Fragment>
       <Space>
-        <Button type="primary" onClick={showDrawer}>
+        <Button
+          type="primary"
+          size="large"
+          onClick={showDrawer}
+          className={classes.addBtn}
+        >
           Add Bill
         </Button>
       </Space>

@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import LabForm from "./LabForm"
+import classes from "./lab.module.css"
 
 const LabDrawer = () => {
   const [visible, setVisible] = useState(false)
@@ -15,7 +16,12 @@ const LabDrawer = () => {
     <React.Fragment>
       <>
         <Space>
-          <Button type="primary" onClick={showDrawer}>
+          <Button
+            type="primary"
+            size="large"
+            onClick={showDrawer}
+            className={classes.addBtn}
+          >
             Add Lab
           </Button>
         </Space>

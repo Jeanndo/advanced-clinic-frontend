@@ -1,7 +1,12 @@
 import React from "react"
+import Insurances from "./../Pages/Insurances"
 
-const Insurances = () => {
-  return <div>Insurances</div>
+const Insurance = () => {
+  return (
+    <React.Fragment>
+      <Insurances />
+    </React.Fragment>
+  )
 }
 
-export default Insurances
+export default Insurance
