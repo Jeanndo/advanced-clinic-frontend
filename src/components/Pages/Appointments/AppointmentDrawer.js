@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import AppointmentForm from "./AppointmentForm"
+import classes from "./appointment.module.css"
 
 const AppointmentDrawer = () => {
   const [visible, setVisible] = useState(false)
@@ -13,27 +14,30 @@ const AppointmentDrawer = () => {
 
   return (
     <React.Fragment>
-      <>
-        <Space>
-          <Button type="primary" onClick={showDrawer}>
-            Add Appointment
-          </Button>
-        </Space>
-        <Drawer
-          width={500}
-          title="Add Appointment"
-          placement="right"
-          onClose={onClose}
-          visible={visible}
-          extra={
-            <Space>
-              <Button onClick={onClose}>Cancel</Button>
-            </Space>
-          }
+      <Space>
+        <Button
+          type="primary"
+          size="large"
+          onClick={showDrawer}
+          className={classes.addBtn}
         >
-          <AppointmentForm />
-        </Drawer>
-      </>
+          Add Appointment
+        </Button>
+      </Space>
+      <Drawer
+        width={500}
+        title="Add Appointment"
+        placement="right"
+        onClose={onClose}
+        visible={visible}
+        extra={
+          <Space>
+            <Button onClick={onClose}>Cancel</Button>
+          </Space>
+        }
+      >
+        <AppointmentForm />
+      </Drawer>
     </React.Fragment>
   )
 }

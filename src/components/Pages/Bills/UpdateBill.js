@@ -26,7 +26,7 @@ const UpdateBill = () => {
           </Button>
         </Space>
         <Drawer
-          width={800}
+          width={500}
           title="Update Bill"
           placement="right"
           onClose={onClose}

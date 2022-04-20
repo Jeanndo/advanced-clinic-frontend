@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import DoctorForm from "./DoctorForm"
+import classes from "./doctor.module.css"
 
 const DoctorDrawer = () => {
   const [visible, setVisible] = useState(false)
@@ -13,27 +14,30 @@ const DoctorDrawer = () => {
 
   return (
     <React.Fragment>
-      <>
-        <Space>
-          <Button type="primary" onClick={showDrawer}>
-            Add Doctor
-          </Button>
-        </Space>
-        <Drawer
-          width={500}
-          title="ADD DOCTOR"
-          placement="right"
-          onClose={onClose}
-          visible={visible}
-          extra={
-            <Space>
-              <Button onClick={onClose}>Cancel</Button>
-            </Space>
-          }
+      <Space>
+        <Button
+          size="large"
+          type="primary"
+          onClick={showDrawer}
+          className={classes.addBtn}
         >
-          <DoctorForm />
-        </Drawer>
-      </>
+          Add Doctor
+        </Button>
+      </Space>
+      <Drawer
+        width={500}
+        title="ADD DOCTOR"
+        placement="right"
+        onClose={onClose}
+        visible={visible}
+        extra={
+          <Space>
+            <Button onClick={onClose}>Cancel</Button>
+          </Space>
+        }
+      >
+        <DoctorForm />
+      </Drawer>
     </React.Fragment>
   )
 }

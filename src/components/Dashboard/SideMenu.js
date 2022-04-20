@@ -138,18 +138,18 @@ const DashboardSideNavBar = () => {
           icon={<Icon icon="icomoon-free:users" color="#1890ff" />}
           title="Users"
         >
-          <Link to="/users"></Link>
+          <Link to="/users" />
           <Menu.Item key="/adduser">
             <span>
               <strong>Add User</strong>
             </span>
-            <Link to="/adduser"></Link>
+            <Link to="/adduser" />
           </Menu.Item>
           <Menu.Item key="/users">
             <span>
               <strong>User Lists</strong>
             </span>
-            <Link to="/users"></Link>
+            <Link to="/users" />
           </Menu.Item>
         </SubMenu>
         <Menu.Item
@@ -159,8 +159,20 @@ const DashboardSideNavBar = () => {
           <span>
             <strong>Roles</strong>
           </span>
-          <Link to="/roles"></Link>
+          <Link to="/roles" />
         </Menu.Item>
+        <SubMenu
+          key="/doctor/workspace"
+          icon={<Icon icon="healthicons:doctor-female" color="#1890ff" />}
+          title="Doctor'WorkSpace"
+        >
+          <Menu.Item key="/doctor/workspace">
+            <span>
+              <strong>Dashboard</strong>
+            </span>
+            <Link to="/doctor/workspace" />
+          </Menu.Item>
+        </SubMenu>
       </Menu>
     </Sider>
   )

@@ -2,6 +2,7 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import PatientForm from "./PatientForm"
+import classes from "./style.module.css"
 
 const AddPatient = () => {
   const [visible, setVisible] = useState(false)
@@ -16,7 +17,12 @@ const AddPatient = () => {
     <React.Fragment>
       <>
         <Space>
-          <Button type="primary" onClick={showDrawer}>
+          <Button
+            type="primary"
+            onClick={showDrawer}
+            className={classes.addBtn}
+            size="large"
+          >
             Add Patient
           </Button>
         </Space>
@@ -29,9 +35,6 @@ const AddPatient = () => {
           extra={
             <Space>
               <Button onClick={onClose}>Cancel</Button>
-              <Button type="primary" onClick={onClose}>
-                Add
-              </Button>
             </Space>
           }
         >

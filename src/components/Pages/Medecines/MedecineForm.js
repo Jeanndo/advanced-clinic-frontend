@@ -82,6 +82,17 @@ const MedecineForm = () => {
           <Input.TextArea placeholder="Medecine Description" />
         </Form.Item>
         <Form.Item
+          name="production date"
+          rules={[
+            {
+              required: true,
+              message: "Date Please!",
+            },
+          ]}
+        >
+          <Input.TextArea placeholder="Medecine Description" />
+        </Form.Item>
+        <Form.Item
           wrapperCol={{
             offset: 8,
             span: 16,

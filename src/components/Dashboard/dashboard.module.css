@@ -1,0 +1,11 @@
+.User_profile{
+ float: right;
+ width: 100%;
+}
+.logoutBtn{
+  margin-left: 20px;
+}
+.bodybgcolor{
+background: #f0fdfa2d;
+padding:5px;
+}

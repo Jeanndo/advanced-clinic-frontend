@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Drawer, Button, Space } from "antd"
 import SupplierForm from "./SupplierForm"
+import classes from "./supplier.module.css"
 
 const DoctorDrawer = () => {
   const [visible, setVisible] = useState(false)
@@ -15,7 +16,12 @@ const DoctorDrawer = () => {
     <React.Fragment>
       <>
         <Space>
-          <Button type="primary" onClick={showDrawer}>
+          <Button
+            type="primary"
+            size="large"
+            onClick={showDrawer}
+            className={classes.addBtn}
+          >
             Add Supplier
           </Button>
         </Space>
