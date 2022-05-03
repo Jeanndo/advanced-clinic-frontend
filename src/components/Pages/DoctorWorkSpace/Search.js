@@ -16,7 +16,6 @@ const SearchForm = () => {
         <Search
           placeholder="Search Here"
           enterButton="Search"
-          size="large"
           loading={false}
           value={searchTerm}
           onChange={(event) => setSearchTerm(event.target.value)}
