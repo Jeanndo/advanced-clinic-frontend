@@ -1,14 +1,25 @@
-import React from "react"
-import { Row, Col, Divider, Typography, Badge, Avatar } from "antd"
-import Search from "./Search"
-import { BellOutlined } from "@ant-design/icons"
-import classes from "./workspace.module.css"
-import PatientList from "./Patients"
-import Overview from "./PatientOverView"
-
-const { Title } = Typography
+import React from "react";
+import { Row, Col, Divider, Badge, Avatar, Button } from "antd";
+import Search from "./Search";
+import { BellOutlined } from "@ant-design/icons";
+import classes from "./workspace.module.css";
+import PatientList from "./Patients";
+import Overview from "./PatientOverView";
+import AbsanceRequestForm from "./AbsanceModal";
+import LeaveOfAbsenceList from "./AbsenceList";
 
 const DoctorDashboard = () => {
+  const [list, setList] = React.useState(false);
+  const [patient, setPatient] = React.useState(true);
+
+  const showList = () => {
+    setList(true);
+    setPatient(false);
+  };
+  const showPatient = () => {
+    setList(false);
+    setPatient(true);
+  };
   return (
     <React.Fragment>
       <Row>
@@ -20,7 +31,18 @@ const DoctorDashboard = () => {
           lg={{ order: 1 }}
         >
           <div>
-            <Title level={4}>Dr Emmmanuel</Title>
+            <AbsanceRequestForm />
+
+            <Button
+              type="primary"
+              style={{ margin: "0px 10px 0px 10px" }}
+              onClick={showList}
+            >
+              Absence List
+            </Button>
+            <Button type="primary"  onClick={showPatient}>
+              Patients
+            </Button>
           </div>
         </Col>
         <Col
@@ -53,32 +75,49 @@ const DoctorDashboard = () => {
         </Col>
       </Row>
       <Divider orientation="left" />
-      <Row>
-        <Col
-          span={4}
-          xs={{ order: 4 }}
-          sm={{ order: 3 }}
-          md={{ order: 2 }}
-          lg={{ order: 1 }}
-        >
-          <div>
-            <PatientList />
-          </div>
-        </Col>
-        <Col
-          span={20}
-          xs={{ order: 4 }}
-          sm={{ order: 3 }}
-          md={{ order: 2 }}
-          lg={{ order: 1 }}
-        >
-          <div>
-            <Overview />
-          </div>
-        </Col>
-      </Row>
+      {list && (
+        <Row>
+          <Col
+            span={24}
+            xs={{ order: 4 }}
+            sm={{ order: 3 }}
+            md={{ order: 2 }}
+            lg={{ order: 1 }}
+          >
+            <div>
+              <LeaveOfAbsenceList />
+            </div>
+          </Col>
+        </Row>
+      )}
+      {patient && (
+        <Row>
+          <Col
+            span={4}
+            xs={{ order: 4 }}
+            sm={{ order: 3 }}
+            md={{ order: 2 }}
+            lg={{ order: 1 }}
+          >
+            <div>
+              <PatientList />
+            </div>
+          </Col>
+          <Col
+            span={20}
+            xs={{ order: 4 }}
+            sm={{ order: 3 }}
+            md={{ order: 2 }}
+            lg={{ order: 1 }}
+          >
+            <div>
+              <Overview />
+            </div>
+          </Col>
+        </Row>
+      )}
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default DoctorDashboard
+export default DoctorDashboard;
