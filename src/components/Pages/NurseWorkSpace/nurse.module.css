@@ -1,0 +1,48 @@
+.right_top_side_contents{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left:200px;
+}
+.actionButtons{
+    margin-right:100px;
+}
+.actionButtons button{
+    border:none;
+    cursor: pointer;
+}
+.actionButtons button:not(:last-child){
+ margin-right:20px;
+}
+
+.badges{
+    display:flex;
+    flex-wrap: wrap;
+}
+.people_badge{
+    margin-right:20px;
+}
+
+.notifications_badge{
+    margin-left: 10px;
+}
+.patient_container{
+    padding:20px;
+}
+
+.addButton{
+    width: 100px;
+   text-align: center;
+   border:3px;
+  }
+  .deleteBtn{
+   width: 100px;
+   text-align: center;
+   border:3px;
+  }
+  .deleteErrorMessage{
+    color:red;
+    font-size: 20px;
+  }
+  .addBtn{
+    width:300px;
+  }

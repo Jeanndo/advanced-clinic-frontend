@@ -17,6 +17,7 @@ import Receptionist from "./../components/Dashboard/Reception"
 import Roles from "./../components/Dashboard/Roles"
 import AddUser from "./../components/Pages/users/AddUer"
 import DoctorsWorkSpace from "./../components/Dashboard/DoctorPanel"
+import NursePanel from "./../components/Dashboard/NursePanel"
 
 const PrivateRoutes = () => {
   return (
@@ -54,6 +55,11 @@ const PrivateRoutes = () => {
             exact
             path="/doctor/workspace"
             component={DoctorsWorkSpace}
+          />
+          <DashboardRoute
+            exact
+            path="/nurse/workspace"
+            component={NursePanel}
           />
         </Switch>
       </Suspense>
