@@ -15,9 +15,9 @@ const DashboardSideNavBar = () => {
       collapsible
       collapsed={collapsed}
       onCollapse={onCollapse}
-      style={{ backgroundColor: "#fff" }}
+      // style={{ backgroundColor: "#fff" }}
     >
-      <div className="logoBox" style={{ padding: "10px" }}>
+      <div className="logoBox" style={{ padding: "7px" }}>
         <img
           style={{
             width: "50px",
@@ -171,6 +171,18 @@ const DashboardSideNavBar = () => {
               <strong>Dashboard</strong>
             </span>
             <Link to="/doctor/workspace" />
+          </Menu.Item>
+        </SubMenu>
+        <SubMenu
+          key="/nurse/workspace"
+          icon={<Icon icon="healthicons:doctor-female" color="#1890ff" />}
+          title="Nurse's workspace"
+        >
+          <Menu.Item key="/nurse/workspace">
+            <span>
+              <strong>Dashboard</strong>
+            </span>
+            <Link to="/nurse/workspace" />
           </Menu.Item>
         </SubMenu>
       </Menu>

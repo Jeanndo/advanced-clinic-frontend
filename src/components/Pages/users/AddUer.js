@@ -54,7 +54,6 @@ const AddUer = () => {
           <Col className="gutter-row" span={12}>
             <div>
               <Form.Item
-                label="First Name"
                 name="firstName"
                 rules={[
                   {
@@ -66,14 +65,12 @@ const AddUer = () => {
                 <Input placeholder="First Name" />
               </Form.Item>
               <Form.Item
-                label="Last Name"
                 name="lastName"
                 rules={[{ required: true, message: "Your Last Name Please!" }]}
               >
                 <Input placeholder=" Last Name" />
               </Form.Item>
               <Form.Item
-                label="National id"
                 name="Nid"
                 rules={[
                   {
@@ -85,14 +82,12 @@ const AddUer = () => {
                 <Input placeholder="National ID" />
               </Form.Item>
               <Form.Item
-                label="Job   Title"
                 name="jobTitle"
                 rules={[{ required: true, message: "Your Job Title Please!" }]}
               >
                 <Input placeholder="Job Title" />
               </Form.Item>
               <Form.Item
-                label="Role"
                 name="role"
                 rules={[{ required: true, message: "Choose  Role Please!" }]}
               >
@@ -105,14 +100,12 @@ const AddUer = () => {
                 </Select>
               </Form.Item>
               <Form.Item
-                label="Country"
                 name="Country"
                 rules={[{ required: true, message: "Your Country Please!" }]}
               >
                 <Input placeholder="Country" />
               </Form.Item>
               <Form.Item
-                label="Date Of Birth"
                 name="dob"
                 rules={[
                   { required: true, message: "Your Date of Birth Please !" },
@@ -131,28 +124,24 @@ const AddUer = () => {
                 </Radio.Group>
               </Form.Item>
               <Form.Item
-                label="address"
                 name="address"
                 rules={[{ required: true, message: "Your Address Please !" }]}
               >
                 <Input placeholder="Address" />
               </Form.Item>
               <Form.Item
-                label="phone"
                 name="phone"
                 rules={[{ required: true, message: "Your Phone please !" }]}
               >
                 <Input type="number" placeholder="Phone" />
               </Form.Item>
               <Form.Item
-                label="Department ID"
                 name="department_id"
                 rules={[{ required: true, message: "Patient ID Please!" }]}
               >
                 <Input type="number" placeholder="Patient ID" />
               </Form.Item>
               <Form.Item
-                label="Work ID"
                 name="work_id"
                 rules={[{ required: true, message: "Work ID Please!" }]}
               >
@@ -173,14 +162,12 @@ const AddUer = () => {
                 </Button>
               </Form.Item>
               <Form.Item
-                label="Email"
                 name="email"
                 rules={[{ required: true, message: "Your Email please !" }]}
               >
                 <Input placeholder="Email" />
               </Form.Item>
               <Form.Item
-                label="Password"
                 name="password"
                 rules={[{ required: true, message: "Password please!" }]}
               >
