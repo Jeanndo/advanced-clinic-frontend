@@ -1,28 +1,20 @@
-import React from "react"
-import { Statistic, Row, Col, Card } from "antd"
+import React from "react";
+import { Divider } from "antd";
+import Doctors from "../Pages/Home/Doctors/Doctors";
+import AppointmentDoctors from "./../Pages/Home/AppointmentAndDoctors/AppointmentDoctors"
+import Analytics from "./../Pages/Home/Analytics/Analytics"
 
 const Dashboard = () => {
   return (
-    <div className="p-5">
-      <Row gutter={16}>
-        <Col span={8}>
-          <Card bordered={false}>
-            <Statistic title="Patients" value={112893} />
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card bordered={false}>
-            <Statistic title="Doctors" value={112893} />
-          </Card>
-        </Col>
-        <Col span={8}>
-          <Card bordered={false}>
-            <Statistic title="Departments" value={112893} />
-          </Card>
-        </Col>
-      </Row>
-    </div>
-  )
-}
+    <React.Fragment>
+      <Doctors />
+      <Divider />
+      <AppointmentDoctors/>
+      <Divider />
+      <Analytics/>
+      <Divider />
+    </React.Fragment>
+  );
+};
 
-export default Dashboard
+export default Dashboard;

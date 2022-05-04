@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 100px;
+}
+.container div {
+  margin-bottom:5px;
+  align-items: center;
+  position: relative;
+}
+.container div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.patientLabel{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff; 
+    padding:2px;
+    background-color: #16A34A;
+    border-radius:200px;
+    margin: 5px 0px 0px 10px;
+    display:block;
+  
+    
+}
+.custom__Avatar{
+    display: flex;
+    padding:0px 7px;
+    border-radius:200px;
+    align-items: center;
+    border:1px solid rgb(209, 209, 209);
+    
+}
+.custom__Avatar div img{
+   object-fit: cover;
+   width:25px;
+   height:25px;
+   border-radius:100px;
+   margin-top:5px;
+}

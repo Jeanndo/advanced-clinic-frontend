@@ -1,0 +1,87 @@
+.container {
+  padding: 5px 100px;
+  align-items: center;
+}
+.analytics__data {
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+}
+.Appointment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+  .Appointment div img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-top: 5px;
+  }
+  .Appointment div {
+    width: 33%;
+  }
+  .appointment__container {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .status__Icon {
+    width: 20px;
+    height: 20px;
+    background-color: #16a34a;
+    border-radius: 200px;
+    display: inline-block;
+    color: #fff;
+    padding: 0px 0px 0px 2px;
+    margin-right: 10px;
+  }
+  .status__Icon_close{
+    width: 20px;
+    height: 20px;
+    background: #FB0000;
+    border-radius: 200px;
+    display: inline-block;
+    color: #fff;
+    padding: 0px 0px 0px 2px;
+    margin-right: 10px;  
+  }
+  .status__close_doctor{
+      width: 20px;
+      height: 20px;
+      background: #CA8A04;
+      border-radius: 200px;
+      display: inline-block;
+      color: #fff;
+      padding: 0px 0px 0px 2px;
+      margin-right: 10px;    
+  }
+  .service {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: center;
+    color: #16a34a;
+    padding: 5px;
+  }
+  
+  .appointment__title h5 {
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: #2563eb;
+  }
+  
