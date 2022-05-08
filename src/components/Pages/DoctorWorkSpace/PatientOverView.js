@@ -1,18 +1,18 @@
-import React from "react"
-import classes from "./workspace.module.css"
-import { Divider, Row, Col } from "antd"
-import BloodIcon from "./../../../assets/blood.png"
-import TempIcon from "./../../../assets/Temp.png"
-import HeartIcon from "./../../../assets/Haert.png"
-import cardiologist from "./../../../assets/gridicons_read-more.png"
-import BloodChart from "./BloodChart"
-import TempChart from "./TemperatureChart"
-import HeartRateChart from "./HeartRateChart"
-import BmiCalculator from "./BmiCalculator"
-import DiagnosticModal from "./DiagnosticModal"
-import RequestExamModal from "./ExamModal"
-import PrescribeMedModal from "./PrescribeModal"
-import ExamResults from "./ResultModal"
+import React from "react";
+import classes from "./workspace.module.css";
+import { Divider, Row, Col } from "antd";
+import BloodIcon from "./../../../assets/blood.png";
+import TempIcon from "./../../../assets/Temp.png";
+import HeartIcon from "./../../../assets/Haert.png";
+import cardiologist from "./../../../assets/gridicons_read-more.png";
+import BloodChart from "./BloodChart";
+import TempChart from "./TemperatureChart";
+import HeartRateChart from "./HeartRateChart";
+import BmiCalculator from "./BmiCalculator";
+import DiagnosticModal from "./DiagnosticModal";
+import RequestExamModal from "./ExamModal";
+import PrescribeMedModal from "./PrescribeModal";
+import ExamResults from "./ResultModal";
 
 const PatientOverView = () => {
   return (
@@ -45,13 +45,6 @@ const PatientOverView = () => {
         </div>
       </div>
       <div className={classes.patient__data}>
-        <span>Name:</span>
-        <h5 className={classes.patient__name}>Monaco Mai Jenkins Age: 23</h5>
-        <div>
-          <span>Age:</span>
-          <h5 className={classes.patient__name}>23</h5>
-        </div>
-        <Divider orientation="left" />
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 4 }}>
           <Col className="gutter-row" span={6}>
             <div>
@@ -241,7 +234,7 @@ const PatientOverView = () => {
         <BmiCalculator />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PatientOverView
+export default PatientOverView;

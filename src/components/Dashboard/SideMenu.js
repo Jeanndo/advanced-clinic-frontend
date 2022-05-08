@@ -1,15 +1,15 @@
-import React, { useState } from "react"
-import { Layout, Menu } from "antd"
-import { Link, useLocation } from "react-router-dom"
-import { Icon } from "@iconify/react"
+import React, { useState } from "react";
+import { Layout, Menu } from "antd";
+import { Link, useLocation } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
-const { Sider } = Layout
-const { SubMenu } = Menu
+const { Sider } = Layout;
+const { SubMenu } = Menu;
 
 const DashboardSideNavBar = () => {
-  const [collapsed, setCollapsed] = useState(false)
-  const location = useLocation()
-  const onCollapse = (collapsed) => setCollapsed(collapsed)
+  const [collapsed, setCollapsed] = useState(false);
+  const location = useLocation();
+  const onCollapse = (collapsed) => setCollapsed(collapsed);
   return (
     <Sider
       collapsible
@@ -187,7 +187,7 @@ const DashboardSideNavBar = () => {
         </SubMenu>
       </Menu>
     </Sider>
-  )
-}
+  );
+};
 
-export default DashboardSideNavBar
+export default DashboardSideNavBar;
