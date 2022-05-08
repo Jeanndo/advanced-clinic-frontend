@@ -6,7 +6,7 @@ import DeleteLeave from "./DeleteLeave"
 const { Option } = Select
 
 function handleChange(value) {
-  console.log(value) // { value: "lucy", key: "lucy", label: "Lucy (101)" }
+  console.log(value) 
 }
 const Actions = () => {
   return (
