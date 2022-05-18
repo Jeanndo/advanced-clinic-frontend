@@ -1,12 +1,12 @@
-import React from "react"
-import { Row, Col, Divider } from "antd"
-import classes from "./workspace.module.css"
-import BodyParts from "./../../../assets/BodyImage.png"
-import { Slider } from "antd"
-import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons"
+import React from "react";
+import { Row, Col, Divider } from "antd";
+import classes from "./workspace.module.css";
+import BodyParts from "./../../../assets/BodyImage.png";
+import { Slider } from "antd";
+import { ArrowUpOutlined, ArrowDownOutlined } from "@ant-design/icons";
 
 const BmiCalculator = () => {
-  const [bmi, setBmi] = React.useState(21)
+  const [bmi, setBmi] = React.useState(21);
 
   return (
     <React.Fragment>
@@ -26,53 +26,56 @@ const BmiCalculator = () => {
         <Col className="gutter-row" span={24}>
           <div className={classes.bmi__calculator__displays__container}>
             <div className={classes.bmiwith__height__container}>
-              <div className={classes.bmi__calculator__height__reader}>
-                <div
-                  className={classes.height__first__two__grey__leader_lines}
-                ></div>
-                <div
-                  className={classes.height__first__two__grey__leader_lines}
-                ></div>
-                <div className={classes.height_third_readerline}></div>
-                <div className={classes.height__fourth__reader__line}></div>
-                <div
-                  className={classes.height__next__three__reader__line}
-                ></div>
-                <div
-                  className={classes.height__next__three__reader__line}
-                ></div>
-                <div
-                  className={classes.height__next__three__reader__line}
-                ></div>
-                <div className={classes.height__eigth__reader__line}></div>
-                <div className={classes.height__ninth__reader__line}></div>
-                <div>
-                  <span>H 170 cm</span>
+              <div className={classes.bmi__height__container}>
+                <div className={classes.bmi__calculator__height__reader}>
+                  <div
+                    className={classes.height__first__two__grey__leader_lines}
+                  ></div>
+                  <div
+                    className={classes.height__first__two__grey__leader_lines}
+                  ></div>
+                  <div className={classes.height_third_readerline}></div>
+                  <div className={classes.height__fourth__reader__line}></div>
+                  <div
+                    className={classes.height__next__three__reader__line}
+                  ></div>
+                  <div
+                    className={classes.height__next__three__reader__line}
+                  ></div>
+                  <div
+                    className={classes.height__next__three__reader__line}
+                  ></div>
+                  <div className={classes.height__eigth__reader__line}></div>
+                  <div className={classes.height__ninth__reader__line}></div>
+                </div>
+                <div className={classes.bmiheight__leadings}>
+                  <span> 170 cm (height)</span>
                 </div>
               </div>
-
-              <div className={classes.bmi__calculator__weight__reader}>
-                <div
-                  className={classes.height__first__two__grey__leader_lines}
-                ></div>
-                <div
-                  className={classes.height__first__two__grey__leader_lines}
-                ></div>
-                <div className={classes.height_third_readerline}></div>
-                <div className={classes.height__fourth__reader__line}></div>
-                <div
-                  className={classes.height__next__three__reader__line}
-                ></div>
-                <div
-                  className={classes.height__next__three__reader__line}
-                ></div>
-                <div
-                  className={classes.height__next__three__reader__line}
-                ></div>
-                <div className={classes.height__eigth__reader__line}></div>
-                <div className={classes.height__ninth__reader__line}></div>
-                <div>
-                  <span>W 72 kg</span>
+              <div className={classes.bmi__weight__container}>
+                <div className={classes.bmi__calculator__weight__reader}>
+                  <div
+                    className={classes.height__first__two__grey__leader_lines}
+                  ></div>
+                  <div
+                    className={classes.height__first__two__grey__leader_lines}
+                  ></div>
+                  <div className={classes.height_third_readerline}></div>
+                  <div className={classes.height__fourth__reader__line}></div>
+                  <div
+                    className={classes.height__next__three__reader__line}
+                  ></div>
+                  <div
+                    className={classes.height__next__three__reader__line}
+                  ></div>
+                  <div
+                    className={classes.height__next__three__reader__line}
+                  ></div>
+                  <div className={classes.height__eigth__reader__line}></div>
+                  <div className={classes.height__ninth__reader__line}></div>
+                </div>
+                <div className={classes.bmiheight__leadings}>
+                  <span>72 kg (weight)</span>
                 </div>
               </div>
             </div>
@@ -141,7 +144,7 @@ const BmiCalculator = () => {
         </Col>
       </Row>
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default BmiCalculator
+export default BmiCalculator;

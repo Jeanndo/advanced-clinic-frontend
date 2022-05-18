@@ -10,7 +10,7 @@
 .overview {
   width: 15%;
   background-color: rgba(196, 196, 196, 0.2);
- position:relative;
+  position: relative;
 }
 .patient__data {
   width: 50%;
@@ -38,8 +38,8 @@
   text-align: center;
   color: #000000;
 }
-.overview__action{
-  margin: 50px 0;
+.overview__action {
+  /* margin: 50px 0; */
 }
 .overview__action button {
   border-style: none;
@@ -64,8 +64,8 @@
 .overview__info {
   background: #1d4ed84d;
   padding: 20px;
-  position:absolute;
-  top: 425px;
+  position: absolute;
+  /* top: 100px; */
 }
 .patient__name {
   display: inline;
@@ -260,24 +260,28 @@
 .bmiwith__height__container {
   margin-right: 10px;
 }
-.bmi__calculator__height__reader {
-  width: 140px;
-  height: 50px;
+.bmiwith__height__container > div:not(:last-child) {
+  margin-bottom: 10px;
+}
+.bmi__height__container {
   background: #f8debd;
+  width: 130px;
   border-radius: 5px;
-  align-items: center;
-  padding:0 0 0 70px;
+  height: 50px;
+}
+.bmi__calculator__height__reader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 .bmi__calculator__height__reader div {
   margin-right: 5px;
   display: inline-block;
- 
 }
 .height__first__two__grey__leader_lines {
-  margin-top: -10px;
   width: 1.78px;
   height: 10px;
-  background: rgba(40, 40, 40, 0.28);
+  background: rgba(40, 40, 40, 0.522);
 }
 .height_third_readerline {
   width: 1.78px;
@@ -288,34 +292,41 @@
   width: 1.78px;
   height: 22px;
   background: #d16564;
- 
 }
 .height__next__three__reader__line {
-width: 1.78px;
-height: 10px;
-background: #282828;
+  width: 1.78px;
+  height: 10px;
+  background: #282828;
 }
-.height__eigth__reader__line{
-width: 1.78px;
-height: 10px;
-background: rgba(40, 40, 40, 0.6);
+.height__eigth__reader__line {
+  width: 1.78px;
+  height: 10px;
+  background: rgba(40, 40, 40, 0.6);
 }
-.height__ninth__reader__line{
-width: 1.78px;
-height: 10px;
-background: rgba(40, 40, 40, 0.3);
+.height__ninth__reader__line {
+  width: 1.78px;
+  height: 10px;
+  background: rgba(40, 40, 40, 0.3);
 }
 
-.bmi__calculator__weight__reader {
-  margin-top: 10px;
-  width: 140px;
-  height: 50px;
-  background: #d0fbff;
-  border-radius: 5px;
-  align-items: center;
-  padding:0 0 0 70px;
+.bmiheight__leadings span {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  text-align: center;
 }
-.bmi__calculator__weight__reader div{
+.bmi__weight__container {
+  background: #d0fbff;
+  width: 130px;
+  border-radius: 5px;
+  height: 50px;
+}
+.bmi__calculator__weight__reader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.bmi__calculator__weight__reader div {
   margin-right: 5px;
   display: inline-block;
 }
@@ -326,34 +337,34 @@ background: rgba(40, 40, 40, 0.3);
   border-radius: 5px;
   padding: 10px;
 }
-.bmi__title{
-display:block;
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 100;
-font-size: 13px;
-color: #FFFFFF;
-text-align: center;
+.bmi__title {
+  display: block;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
 }
-.bmi__calculator__results{
+.bmi__calculator__results {
   display: flex;
-  padding:10px;
+  padding: 10px;
 }
-.bmi__calculator__results__figures{
- width: 40%;
- color: #fff;
- text-align:center;
+.bmi__calculator__results__figures {
+  width: 40%;
+  color: #fff;
+  text-align: center;
 }
-.bmi__calculator__results__text{
-width: 60%;
-background: #D6FFDD;
-border-radius: 8px;
-text-align:center;
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 100;
-font-size: 10px;
-padding: 2px;
+.bmi__calculator__results__text {
+  width: 60%;
+  background: #d6ffdd;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 10px;
+  padding: 2px;
 }
 .body__measurement__container h5 {
   font-family: "Mulish";
@@ -366,13 +377,12 @@ padding: 2px;
 .body__parts__measurments {
   display: flex;
   flex-wrap: wrap;
-  padding:10px;
+  padding: 10px;
 }
 .body__parts {
   width: 30%;
   display: flex;
   flex-direction: column;
-  
 }
 .body__parts_card {
   padding: 15px 5px;
@@ -394,52 +404,51 @@ padding: 2px;
   height: 250px;
   object-fit: contain;
 }
-.completeDiagnosticBtn{
-width: 200px;
-height: 70px;
-border-radius: 100px;
-}
-
-
-.SendExamBtn{
+.completeDiagnosticBtn {
   width: 200px;
   height: 70px;
   border-radius: 100px;
 }
 
-.prescribeMedicationBtn{
-width: 200px;
-height: 70px;
-border-radius: 100px;
+.SendExamBtn {
+  width: 200px;
+  height: 70px;
+  border-radius: 100px;
 }
 
-.resultImage__container img{
+.prescribeMedicationBtn {
+  width: 200px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+.resultImage__container img {
   width: 100%;
-object-fit:contain;
+  object-fit: contain;
 }
 
-.resultTitle{
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 100;
-font-size: 16px;
-line-height: 36px;
-align-items: center;
-color: #000000;
+.resultTitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 36px;
+  align-items: center;
+  color: #000000;
 }
-.resultContainer{
-  padding:50px;
-  background: #F3F4F6;
+.resultContainer {
+  padding: 50px;
+  background: #f3f4f6;
 }
 
-.printBtn{
+.printBtn {
   background: #1d4ed8;
   border-radius: 2px;
   border-style: none;
   font-size: 12px;
-  width:100px;
-  padding:5px;
+  width: 100px;
+  padding: 5px;
   cursor: pointer;
   color: #fff;
-  margin-top:10px;
+  margin-top: 10px;
 }
